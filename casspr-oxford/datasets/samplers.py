@@ -86,6 +86,7 @@ class BatchSampler(Sampler):
             selected_element = random.choice(list(unused_elements_ndx))
             unused_elements_ndx.pop(selected_element)
             positives = self.dataset.get_positives_ndx(selected_element)
+            positives = list(positives)
             if len(positives) == 0:
                 # Broken dataset element without any positives
                 continue
