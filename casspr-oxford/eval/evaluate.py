@@ -110,7 +110,7 @@ def downsample_point_cloud(xyz, voxel_size=0.05):
 def load_pc(filename, params):
     # Load point cloud, does not apply any transform
     # Returns Nx3 matrix or Nx4 matrix depending on the intensity value
-    file_path = os.path.join(params.dataset_folder, filename)
+    file_path = os.path.join('/home/wzj/pan1/Data', filename)
 
     if params.dataset_name == "USyd":
         pc = np.fromfile(file_path, dtype=np.float32).reshape([-1, 4])
