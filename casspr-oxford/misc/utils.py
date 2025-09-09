@@ -209,11 +209,8 @@ class MinkLocParams:
             self.eval_query_files = ['usyd_evaluation_query.pickle']
 
         elif self.dataset_name == 'Oxford':
-            self.eval_database_files = ['oxford_evaluation_database.pickle', 'business_evaluation_database.pickle',
-                                        'residential_evaluation_database.pickle',
-                                        'university_evaluation_database.pickle']
-            self.eval_query_files = ['oxford_evaluation_query.pickle', 'business_evaluation_query.pickle',
-                                     'residential_evaluation_query.pickle', 'university_evaluation_query.pickle']
+            self.eval_database_files = ['oxford_evaluation_database.pickle']
+            self.eval_query_files = ['oxford_evaluation_query.pickle']
         elif self.dataset_name == 'TUM':
             self.eval_database_files = ['tum_evaluation_frame_5m_database.pickle']
             self.eval_query_files = ['tum_evaluation_frame_5m_query.pickle']
