@@ -128,7 +128,7 @@ class OxfordDataset(Dataset):
     def load_pc(self, filename):
         # Load point cloud, does not apply any transform
         # Returns Nx3 matrix
-        file_path = os.path.join(self.dataset_path, filename)
+        file_path = os.path.join('/home/wzj/pan1/Data', filename)
         pc = np.fromfile(file_path, dtype=np.float64)
         # coords are within -1..1 range in each dimension
         assert pc.shape[0] == self.n_points * 3, "Error in point cloud shape: {}".format(filename)
